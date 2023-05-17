@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--MIS ESTILOS-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!--FUENTES DE GOOGLEFONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <link rel="shortcout icon" href="./assets/img/favicon.svg">
+    <title>Proyecto Encriptador</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/img/Logo.svg" alt="">
+    </header>
+
+    <main class="container">
+        <section class="text_aEncriptar">
+            <textarea class="textoAencriptar" name="" id="" cols="60" rows="15"
+                placeholder="Ingrese el texto aqui"></textarea>
+
+            <p><img src="./assets/img/bi_exclamation-circle-fill.svg" alt=""> Evita usar caracteres especiales solo
+                letras minusculas y sin acentos </p>
+            <div class="botones">
+                <button class="btnEncriptar" onclick="Encriptar()">Encriptar</button>
+                <button class="btnDesEncriptar" onclick="desEncriptar()">DesEnciptar</button>
+            </div>
+
+        </section>
+        <aside class="text-copy">
+            <textarea class="textoEncriptado" name="" id="" cols="20" rows="15" placeholder=""></textarea>
+
+            <div>
+                <button class="btnCopiar">Copiar</button>
+                <div class="mensajeAviso"></div>
+            </div>
+        </aside>
+        <div class="mensajeAviso"></div>
+
+    </main>
+
+
+</body>
+<script src="./assets/js/scipts.js"></script>
+
+</html>

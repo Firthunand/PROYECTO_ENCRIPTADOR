@@ -1,0 +1,157 @@
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #F3F5FC;
+    max-width: 100%;
+}
+
+.logo {
+    margin: 3rem;
+}
+
+.container {
+    display: flex;
+
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.textoAencriptar {
+    margin-left: 10rem;
+}
+
+.textoAencriptar {
+    font-size: 2em;
+    background-color: #F3F5FC;
+    border: none;
+    box-shadow: 10px 13px 13px -2px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 10px 13px 13px -2px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 10px 13px 13px -2px rgba(0, 0, 0, 0.43);
+}
+
+.textoAencriptar:focus {
+    outline: none;
+}
+
+.textoEncriptado {
+    font-size: 2rem;
+    background-color: #ffffff;
+    background-image: url("../img/Muñeco.png");
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    color: #0A3871;
+    border: none;
+    border-radius: 0.9rem;
+    position: fixed;
+}
+
+.textoEncriptado:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.btnEncriptar {
+    background-color: #0A3871;
+    color: #FFFF;
+    border: 0.2em solid #0A3871;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 20rem;
+}
+
+.btnDesEncriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 0.2em solid #0A3871;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+p {
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.btnCopiar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 0.2em solid #0A3871;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 20rem;
+    margin-left: 3rem;
+    margin-top: 30rem;
+    position: absolute;
+}
+
+.mensajeAviso {
+    display: none;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.mensajeAviso.visible {
+    display: block;
+}
+
+/* Estilos para pantallas grandes */
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .logo {
+        margin: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textoAencriptar {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .textoEncriptado {
+        margin: 1rem;
+        position: static;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnEncriptar,
+    .btnDesEncriptar {
+        width: 100%;
+        margin: 1rem;
+    }
+
+    p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btnCopiar {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        position: static;
+    }
+}

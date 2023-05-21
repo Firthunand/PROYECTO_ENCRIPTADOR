@@ -93,7 +93,7 @@ p {
     height: 3.5rem;
     width: 20rem;
     margin-left: 3rem;
-    margin-top: 30rem;
+    margin-top: 25rem;
     position: absolute;
 }
 
@@ -109,6 +109,12 @@ p {
 
 .mensajeAviso.visible {
     display: block;
+}
+footer{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #495057;
+    margin: 30px 80px;
 }
 
 /* Estilos para pantallas pequeñas */
@@ -152,5 +158,11 @@ p {
         margin-left: 1rem;
         margin-top: 2rem;
         position: static;
+    }
+    footer{
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color: #495057;
+        margin: 30px 80px;
     }
 }

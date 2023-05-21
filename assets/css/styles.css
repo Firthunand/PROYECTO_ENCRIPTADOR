@@ -45,7 +45,6 @@ body {
     border: none;
     resize: none;
     border-radius: 0.9rem;
-    position: fixed;
 }
 
 .textoEncriptado:focus {

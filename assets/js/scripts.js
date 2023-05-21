@@ -6,7 +6,7 @@ let claves = [
     ["i", "imes"],
     ["a", "ai"],
     ["o", "ober"],
-    ["u", "ufat"]
+    ["u", "ufat"],
 ];
 
 let Encriptar = () => {
@@ -24,7 +24,7 @@ let encriptador = (aEncriptar) => {
     //recorremos el array y reemplazamos cada letra con su llave respectiva para encriptar
     for (let i = 0; i < claves.length; i++) {
         if (aEncriptar.includes(claves[i][0])) {
-            aEncriptar = aEncriptar.replace(claves[i][0], claves[i][1]);
+            aEncriptar = aEncriptar.replaceAll(claves[i][0], claves[i][1]);
         }
     }
     return aEncriptar;
@@ -45,7 +45,7 @@ let desencriptador = (adeseEncriptar) => {
     //recorremos el array y reemplazamos cada letra con su llave respectiva para desencriptar
     for (let i = 0; i < claves.length; i++) {
         if (adeseEncriptar.includes(claves[i][1])) {
-            adeseEncriptar = adeseEncriptar.replace(claves[i][1], claves[i][0]);
+            adeseEncriptar = adeseEncriptar.replaceAll(claves[i][1], claves[i][0]);
         }
     }
     return adeseEncriptar;
@@ -69,6 +69,4 @@ let copiar = () => {
 }
 
 botonCopiar.addEventListener("click", copiar);
-
-
 

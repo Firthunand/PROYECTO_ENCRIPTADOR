@@ -1,3 +1,4 @@
+/* Estilos para pantallas grandes */
 body {
     font-family: 'PT Serif', serif;
     background-color: #F3F5FC;
@@ -10,7 +11,6 @@ body {
 
 .container {
     display: flex;
-
 }
 
 ::placeholder {
@@ -19,12 +19,11 @@ body {
 
 .textoAencriptar {
     margin-left: 10rem;
-}
-
-.textoAencriptar {
     font-size: 2em;
     background-color: #F3F5FC;
     border: none;
+    resize: none;
+    border-radius: 1rem;
     box-shadow: 10px 13px 13px -2px rgba(0, 0, 0, 0.43);
     -webkit-box-shadow: 10px 13px 13px -2px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 13px 13px -2px rgba(0, 0, 0, 0.43);
@@ -32,6 +31,7 @@ body {
 
 .textoAencriptar:focus {
     outline: none;
+    
 }
 
 .textoEncriptado {
@@ -43,6 +43,7 @@ body {
     padding-left: 0.5rem;
     color: #0A3871;
     border: none;
+    resize: none;
     border-radius: 0.9rem;
     position: fixed;
 }
@@ -109,8 +110,6 @@ p {
 .mensajeAviso.visible {
     display: block;
 }
-
-/* Estilos para pantallas grandes */
 
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
